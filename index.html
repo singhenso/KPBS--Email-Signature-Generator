@@ -124,7 +124,7 @@
                 </div>
               </div>
             </div>
-            <section class="morepos-wrapper">
+            <section class="morepos-wrapper" style="display: none">
               <p id="morepos-trigger"><span id="Show">Show</span> More Positions</p>
               <div id="mang" class="morepos hidden">
                 <div class="field is-horizontal">
@@ -203,7 +203,7 @@
                 </div>
               </div>
             </section>
-            <div class="field is-horizontal">
+            <!-- <div class="field is-horizontal">
               <div class="field-label is-normal">
                 <label class="label" for="checkSkype">Office Room:</label>
               </div>
@@ -219,7 +219,42 @@
                   </p>
                 </div>
               </div>
+            </div> -->
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label" for="checkPhone">Office Phone:</label>
+              </div>
+              <div class="field-body">
+                <div class="field has-addons has-addons-centered">
+                  <p class="control">
+                    <label class="button is-static" title="Check when need insert phone">
+                      <input id="checkPhone" type="checkbox">
+                    </label>
+                  </p>
+                  <p class="control is-expanded">
+                    <input id="phone" class="input" placeholder="937-555-5555" disabled>
+                  </p>
+                </div>
+              </div>
             </div>
+            <div class="field is-horizontal">
+              <div class="field-label is-normal">
+                <label class="label" for="checkPhone2">Mobile Phone:</label>
+              </div>
+              <div class="field-body">
+                <div class="field has-addons has-addons-centered">
+                  <p class="control">
+                    <label class="button is-static" title="Check when need insert phone">
+                      <input id="checkPhone2" type="checkbox">
+                    </label>
+                  </p>
+                  <p class="control is-expanded">
+                    <input id="phone2" class="input" placeholder="937-555-5555" disabled>
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div class="field is-horizontal">
               <div class="field-label is-normal">
                 <label class="label" for="email">Email:</label>
@@ -258,40 +293,7 @@
               </div>
             </div>
 
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label" for="checkPhone">Office Phone:</label>
-              </div>
-              <div class="field-body">
-                <div class="field has-addons has-addons-centered">
-                  <p class="control">
-                    <label class="button is-static" title="Check when need insert phone">
-                      <input id="checkPhone" type="checkbox">
-                    </label>
-                  </p>
-                  <p class="control is-expanded">
-                    <input id="phone" class="input" placeholder="937-555-5555" disabled>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label" for="checkPhone2">Mobile Phone:</label>
-              </div>
-              <div class="field-body">
-                <div class="field has-addons has-addons-centered">
-                  <p class="control">
-                    <label class="button is-static" title="Check when need insert phone">
-                      <input id="checkPhone2" type="checkbox">
-                    </label>
-                  </p>
-                  <p class="control is-expanded">
-                    <input id="phone2" class="input" placeholder="937-555-5555" disabled>
-                  </p>
-                </div>
-              </div>
-            </div>
+
             
             
             <div class="field is-horizontal" style="display: none;">
@@ -328,40 +330,27 @@
                 </div>
               </div>
             </div>
+            <!-- Hide Logo -->
             <div class="field is-horizontal">
               <div class="field-label is-normal">
-                <label class="label" for="checkLogo">Native Text:</label>
+                <label class="label" for="checkLogo">Hide Logo:</label>
               </div>
               <div class="field-body">
                 <div class="field has-addons has-addons-centered">
                   <p class="control">
                     <label class="button is-static">
-                      <input id="checkExtraText" type="checkbox">
+                      <input id="checkLogo" type="checkbox">
                     </label>
                   </p>
                   <p class="control is-expanded">
-                    <input id="logo" class="input" placeholder="Hide Native Text?" disabled>
+                    <input id="logo" class="input" placeholder="Hide Address?" disabled>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="field is-horizontal">
-              <div class="field-label is-normal">
-                <label class="label" for="checkquote">Quote:</label>
-              </div>
-              <div class="field-body">
-                <div class="field has-addons has-addons-centered">
-                  <p class="control">
-                    <label class="button is-static" title="Add Optional Quote">
-                      <input id="checkquote" type="checkbox">
-                    </label>
-                  </p>
-                  <p class="control is-expanded">
-                    <input id="quote" class="input" placeholder="Optional Quote" disabled>
-                  </p>
-                </div>
-              </div>
-            </div>
+            <!-- end logo hide -->
+            
+            
             <div class="field is-horizontal" style="display: none;">
               <div class="field-label is-normal">
                 <label class="label" for="checkImage">Banner:</label>
@@ -412,62 +401,35 @@
                       <div id="pronounwrap" style="color:#006cb4"></div>
                       <span class="position" style="color:#006cb4;display:block"></span>
                       <span class="position_21" style="color:#006cb4;display:block"></span>
-                      <br>
-                      <div class="pos2">
-                        <span class="position2"></span>
-                        <span class="position3"></span>
+
+                      <div style="margin-top:20px">
+                        <span id="phoneWrap"></span>
+                        <span id="phoneWrap2"></span>
                       </div>
-                      <div class="pos2">
-                        <span class="title3"></span>
-                        <span class="dept3"></span>
+                      <div style="margin-top:20px">
+                        <span style="white-space:nowrap">
+                          <a class="email" href="mailto:name@gmail.com"
+                            style="text-decoration:none;color:#262d26;">
+                            name@KPBS.com
+                          </a>
+                        </span>
                       </div>
-                      <div class="pos2">
-                        <span class="title4"></span>
-                        <span class="dept4"></span>
-                      </div>
-                      <div class="position4"></div>
-                      <br>
-                      <div id="skypeWrap"></div>
-                      <span style="white-space:nowrap">
-                        <a class="email" href="mailto:name@gmail.com"
-                          style="color:rgb(85, 85, 85); text-decoration:none;">
-                          name@KPBS.com
-                        </a>
-                      </span>
-                      <div id="phoneWrap"></div>
-                      <div id="phoneWrap2"></div>
                       <div>
                         <a id="weblinz" href="weblinkhref" target="_blank" class="weblink"
-                          style="color:rgb(85, 85, 85); text-decoration:none;">
+                          style="color:#262d26; text-decoration:none;">
                         </a>
                       </div>
-                      <br>
-                      <span style="white-space:nowrap;margin-top:25px;" id="logoWrap">
-                        <a href="https://KPBS.edu/" target="_blank"><img style="width: 135px;" src="" class="logo"></a>
+                      <div style="margin-top:20px">
+                        <span style="white-space:nowrap" id="addressWrap">
+                          <div>5200 Campanile Drive<br>San Diego, CA 92182</div>
                       </span>
-                      <span style="white-space:nowrap" id="addressWrap">
-                        <div>5200 Campanile Drive<br>San Diego, CA 92182</div>
-                      </span>
-                      <div id="imageWrap"></div>
-                      <hr>
-                    </td>
-                  </tr>
-                  <tr id="extratext">
-                    <td
-                      style="padding-left:10px;padding-bottom:25px; color:#58585b; font-family:Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif;font-size:12px;line-height:16px;">
-                      <div>Working and residing on Chumash, Tongva, Fernandeño Tataviam, and Kizh lands. <br>Find out
-                        whose land you're on: <a href="https://native-land.ca/" target="_blank">native-lands.ca</a>
+                    </div>
+                      <div style="white-space:nowrap;margin-top:20px;" id="logoWrap">
+                        <a href="https://www.KPBS.org/" target="_blank"><img style="width: 100px;" src="" class="logo"></a>
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                  <tr id="lastwrap">
-                    <td>
-                      <div id="quotewrap"
-                        style=" padding-left: 10px; color:#58585b; font-family:Verdana, Geneva, Tahoma, sans-serif, Arial, sans-serif; font-size:12px; line-height:16px; ">
-                      </div>
-                    </td>
-                  </tr>
+
                 </tbody>
               </table>
             </div>
