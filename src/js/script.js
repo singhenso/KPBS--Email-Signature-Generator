@@ -186,17 +186,6 @@
   }
 
 
-  checkLogo.addEventListener('click', function () {
-    this.checked ? removeLogo() : addLogo();
-  });
-
-  function removeLogo() {
-    savedLogo = logoWrap.removeChild(logoWrap.lastElementChild);
-  }
-
-  function addLogo() {
-    logoWrap.appendChild(savedLogo);
-  }
 
   // address
 
@@ -211,6 +200,25 @@
   function addAddress() {
     addressWrap.appendChild(savedAddress);
   }
+
+
+  // Addlogo:
+
+  checkLogo.addEventListener('click', function () {
+    console.log('test');
+    this.checked ? removeLogo() : addLogo();
+  });
+
+  function removeLogo() {
+    savedLogo = logoWrap.removeChild(logoWrap.lastElementChild);
+  }
+
+  function addLogo() {
+    logoWrap.appendChild(savedLogo);
+  }
+
+
+
 
 
 
