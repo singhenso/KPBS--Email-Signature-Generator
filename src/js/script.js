@@ -350,7 +350,7 @@
       // element.innerHTML = value;
       // value = linktitlevar;
       // weblink.href = value;
-
+//test
 
 
       var result = document.getElementById("linktitlevar").value;
