@@ -1,0 +1,27 @@
+# Compiled output
+/dist
+/tmp
+/out
+
+# Dependency directories
+/node_modules
+/bower_components
+
+# Log files
+/logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

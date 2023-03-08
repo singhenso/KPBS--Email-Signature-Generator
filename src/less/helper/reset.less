@@ -1,0 +1,64 @@
+
+
+@keyframes movein {
+	from {
+		right: -520px;
+	}
+	to {
+		right: 10px;
+	}
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes moveout {
+	from {
+		right: 10px;
+	}
+	to {
+		right: -520px;
+	}
+}
+
+
+
+@keyframes go {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 10px;
+	}
+	100% {
+		left: 0;
+	}
+}
+//reset
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	font-family: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	color: inherit;
+	background-color: transparent;
+	line-height: 1.3;
+  
+	&:before,
+	&:after {
+	  box-sizing: border-box;
+	}
+  }
+  
+  html {
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+  }
+  
