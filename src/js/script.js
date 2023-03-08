@@ -34,14 +34,14 @@
   var skypeInput = doc.querySelector('#skype');
 
   var pronouninput = doc.querySelector('#pronoun');
-  var weblink = doc.querySelector('#weblink');
+  // var weblink = doc.querySelector('#weblink');
 
   var webtitle_main = doc.querySelector('#webtitle_main');
   var webtitle = doc.querySelector('#webtitle');
   var titleinput = doc.querySelector('#titleinput');
 
   var skypeWrap = doc.querySelector('#skypeWrap');
-  var checkIcons = doc.querySelector('#checkIcons');
+  // var checkIcons = doc.querySelector('#checkIcons');
   var checkLogo = doc.querySelector('#checkLogo');
   var checkAddress = doc.querySelector('#checkAddress');
   var checkExtraText = doc.querySelector('#checkExtraText');
@@ -217,19 +217,19 @@
     span.innerHTML = data;
   }
 
-  checkIcons.addEventListener('click', function () {
-    this.checked ? removeIcons() : addIcons();
-  });
+  // checkIcons.addEventListener('click', function () {
+  //   this.checked ? removeIcons() : addIcons();
+  // });
 
-  function removeIcons() {
-    iconsmaster.style.display = 'none';
-    quoteWrap.style.paddingTop = '0';
-  }
+  // function removeIcons() {
+  //   iconsmaster.style.display = 'none';
+  //   quoteWrap.style.paddingTop = '0';
+  // }
 
-  function addIcons() {
-    iconsmaster.style.display = 'block';
-    quoteWrap.style.paddingTop = '25px';
-  }
+  // function addIcons() {
+  //   iconsmaster.style.display = 'block';
+  //   quoteWrap.style.paddingTop = '25px';
+  // }
 
 
 
@@ -341,7 +341,7 @@
 
     // var linktitle = 
     var linktitlevar = doc.querySelector('#linktitlevar');
-    var weblink = doc.querySelector('.weblink');
+    // var weblink = doc.querySelector('.weblink');
     console.log(linktitlevar.value);
     if (id === 'email') {
       element.href = 'mailto:' + value;
@@ -358,10 +358,6 @@
       document.getElementById("weblinz").href = result;
 
 
-    } else if (id === 'weblink') {
-      element.href = linktitlevar.innerhtml;
-      // element.href = '<a href="' + linktitlevar.value + '" target="_blank">' + weblink + '</a>';
-      element.innerHTML = value;
     } else if (id === 'facebook') {
       element.href = value;
     } else if (id === 'position2') {
